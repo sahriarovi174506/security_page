@@ -1,0 +1,244 @@
+@media (min-width: 1350px) {
+  .container {
+    max-width: 1330px;
+  }
+  .hero_section .title_64 br {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+@media (min-width: 991px) {
+  .px_30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* --------- Navbar -------- */
+  .navbar .container {
+    height: 100%;
+  }
+  .navbar-collapse ul {
+    justify-content: center !important;
+  }
+  .navbar-collapse {
+    height: 100%;
+  }
+  .navbar-nav {
+    gap: 4rem;
+  }
+}
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+@media (max-width: 991px) {
+  br {
+    display: none;
+  }
+  .back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  /* =========== Mobile Menu ============ */
+  .site_header .container {
+    position: relative;
+  }
+  .navbar-nav {
+    padding: 0;
+    display: grid;
+    height: 10rem;
+  }
+  .navbar-collapse {
+    background: #fff;
+    display: block !important;
+    height: 0;
+    position: absolute;
+    width: calc(100% - 4rem);
+    top: 5.5rem;
+    left: 2rem;
+    transition: 0.3s ease;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 0.5rem solid var(--blue);
+    opacity: 0;
+  }
+  .navbar-collapse .nav-item {
+    padding-left: 2rem !important;
+  }
+  .navbar-collapse.show {
+    height: 19rem;
+    opacity: 1;
+  }
+  .bdr_bottom {
+    border-bottom: 1px solid #c2b2b228;
+  }
+  .navbar-toggler.active img:last-child {
+    display: block !important;
+  }
+  .navbar-toggler.active img:first-child {
+    display: none;
+  }
+  .logo img {
+    width: 12rem !important;
+  }
+  .button_one {
+    width: calc(100% - 4rem);
+    left: 2rem;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  /* ========= Hero_Section ========== */
+  .hero_section {
+    padding-bottom: 10rem;
+  }
+  .hero_section .row {
+    gap: 5rem;
+  }
+  .col-lg-6.pl_20 {
+    padding-left: 0.8rem;
+  }
+
+  /* ========= service_section ========== */
+  .whyChoose {
+   padding-top: 0;
+  }
+  .service_boxes {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .service_box {
+    padding: 4rem 3rem;
+  }
+  .service_box img {
+    width: 6rem;
+  }
+  .service_box i {
+    font-size: 6rem;
+  }
+
+  /* ========= Footer_section ========== */
+  .ft_right {
+    gap: 2.5rem;
+  }
+  .footer_top {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer_wrap {
+    padding: 0;
+  }
+}
+
+/*----- sm devices (tablets, 767px and down) -----*/
+@media (max-width: 767px) {
+  /* ------------ Common Classes ------------- */
+  /* ----------------- */
+  .title_64 {
+    font-size: 4rem;
+  }
+  .title_38 {
+    font-size: 3.2rem;
+  }
+  .title_24 {
+    font-size: 2rem;
+  }
+  .title_28 {
+    font-size: 2.5rem;
+  }
+  /* ----------------- */
+  .text_18 {
+    font-size: 1.6rem;
+  }
+  .text_16 {
+    font-size: 1.5rem;
+  }
+
+  /* margin paddings */
+  .pb_30 {
+    padding-bottom: 2.5rem;
+  }
+  .pb_20 {
+    padding-bottom: 2rem;
+  }
+
+  /* ========= Mobile Menu ============== */
+  .logo img {
+    width: 12rem !important;
+  }
+  .navbar-collapse {
+    width: 100%;
+    left: 0;
+  }
+  .navbar-toggler {
+    padding: 0;
+  }
+
+  /* ========= Hero ========== */
+  .hero_section {
+    text-align: center;
+    padding: 4rem 0 8rem 0;
+  }
+  .hero_section h2 i {
+    font-size: 3rem;
+  }
+  /* ========= Contact_section ========== */
+  .contact_section {
+    padding: 8rem 0;
+  }
+  .contact_links {
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    align-items: flex-start !important;
+    padding-left: 2rem;
+  }
+  .contact_links a {
+    padding-right: 0;
+  }
+  .contact_box {
+    padding: 5rem 4rem;
+  }
+  .social_media {
+    margin-top: 2rem;
+  }
+  .service_section .title_38.pb_70 {
+    padding-bottom: 4.5rem;
+  }
+
+  /* ========= Footer_section ========== */
+  .site_footer {
+    padding: 8rem 0;
+  }
+  .footer_top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    justify-content: center;
+    padding-bottom: 3.5rem;
+  }
+  .copywrite {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-top: 3.5rem;
+  }
+  .ft_left {
+    padding-right: 0;
+    text-align: center;
+  }
+  .ft_right {
+    justify-content: center;
+  }
+}
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+@media (max-width: 575px) {
+  html {
+    font-size: 2.33vw;
+  }
+}
